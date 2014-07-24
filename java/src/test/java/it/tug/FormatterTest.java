@@ -1,8 +1,7 @@
 package it.tug;
 
-import static org.junit.Assert.assertEquals;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
+import static org.junit.Assert.*;
+import static org.mockito.Mockito.*;
 import it.tug.Main.Formatter;
 import it.tug.Main.Service;
 
@@ -26,7 +25,7 @@ public class FormatterTest {
         
         String actual = sut.doTheJob("foo");
         
-        assertEquals("error", actual);
+		assertEquals("error", actual);
     }
 
     @Test
